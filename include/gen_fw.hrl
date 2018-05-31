@@ -1,0 +1,4 @@
+-define(DENY_TAG, deny).
+-define(ALLOW_TAG, allow).
+-define(DYNAMIC_TAG, dynamic).
+-define(is_action(X), (X == ?DENY_TAG orelse X == ?ALLOW_TAG orelse X == ?DYNAMIC_TAG)).

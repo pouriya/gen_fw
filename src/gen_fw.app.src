@@ -1,0 +1,10 @@
+{application
+,gen_fw
+,[{description, "Erlang/Elixir Generic firewall process."}
+ ,{vsn, "18.5.31"}
+ ,{applications, [kernel, stdlib]}
+ ,{modules, [gen_fw]}
+ ,{maintainers, ["pouriya.jahanbakhsh@gmail.com"]}
+ ,{licenses, ["BSD 3-Clause"]}
+ ,{links, [{"GitHub", "https://github.com/pouriya-jahanbakhsh/gen_fw"}
+          ,{"Hex", "https://hex.pm/packages/gen_fw"}]}]}.
