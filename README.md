@@ -33,8 +33,8 @@ For example:
 ```erlang
 
 start_link_fw() ->
-	gen_fw:start_link({?MODULE, start_link, []}
-                     ,[{cast, deny}, {message, allow}, {system, allow}, {call, dynamic}]).
+        gen_fw:start_link({?MODULE, start_link, []}
+                         ,[{cast, deny}, {message, allow}, {system, allow}, {call, dynamic}]).
 
 start_link() ->
 	gen_server:start_link(?MODULE, init_arg, []).
