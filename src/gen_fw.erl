@@ -97,7 +97,7 @@ when
     Info :: {From, term()} | term(),
     From :: {pid(), reference()}.
 
--optional_callbacks([]).
+-optional_callbacks([fw_handle_message/2]).
 
 %% -------------------------------------------------------------------------------------------------
 %% API:
