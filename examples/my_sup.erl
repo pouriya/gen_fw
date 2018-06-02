@@ -1,7 +1,7 @@
 -module(my_sup).
 
 %% API
--export([start_link/1, start_link/0])
+-export([start_link/1, start_link/0]).
 
 %% 'supervisor' callback:
 -export([init/1]).
