@@ -73,7 +73,8 @@
 -type  rule() :: {'cast', action()}
                | {'call', action()}
                | {'message', action()}
-               | {'system', action()}.
+               | {'system', action()}
+               | {'all', action()}.
 -type   action() :: 'allow' | 'deny' | 'dynamic'.
 
 -type start_return() :: {'ok', pid()} | 'ignore' | {'error', term()}.
