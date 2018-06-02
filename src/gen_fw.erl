@@ -31,7 +31,7 @@
 %%% POSSIBILITY OF SUCH DAMAGE.
 %%% ------------------------------------------------------------------------------------------------
 %% @author   Pouriya Jahanbakhsh <pouriya.jahanbakhsh@gmail.com>
-%% @version  18.5.31
+%% @version  18.6.2
 %% @doc
 %%           Erlang/Elixir Generic firewall process.
 %% @end

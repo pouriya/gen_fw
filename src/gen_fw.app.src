@@ -1,7 +1,7 @@
 {application
 ,gen_fw
 ,[{description, "Erlang/Elixir Generic firewall process."}
- ,{vsn, "18.5.31"}
+ ,{vsn, "18.6.2"}
  ,{applications, [kernel, stdlib]}
  ,{modules, [gen_fw]}
  ,{maintainers, ["pouriya.jahanbakhsh@gmail.com"]}
