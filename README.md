@@ -4,7 +4,7 @@
 Generic firewall process for Erlang/Elixir. It's an Erlang process between client processes and server process/port and prevents receiving some unwanted Erlang messages from server process/port.
 
 ## When to use **gen_fw**?
-When writing new server process, It's better to receive all messages and handle unwanted messages in that process instead of using `gen_fw`. But when you are using some generic behaviour or someone else's library and you don't want your client processes send everything (even wrongly) to server process/port, `gen_fw` is your firned. In below example i will show you how to prevent client process call `supervisor:terminate/2` successfully for your supervisor.  
+When writing new server process, It's better to receive all messages and handle unwanted messages in that process instead of using `gen_fw`. But when you are using some generic behaviour or someone else's library and you don't want your client processes send everything (even wrongly) to server process/port, `gen_fw` is your friend. In below example i will show you how to prevent client process call `supervisor:terminate/2` successfully for your supervisor.  
 
 ## How to use?
 To starting main process you have to give its `MFA` to `gen_fw` and `gen_fw` will start itself and main process in order. Note that if you want to register main process, you have to **give** its register name to `gen_fw` and `gen_fw` will register itself.  
