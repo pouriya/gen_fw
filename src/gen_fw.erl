@@ -87,6 +87,19 @@
              ,start_return/0]).
 
 %% -------------------------------------------------------------------------------------------------
+%% Behaviour info:
+
+-callback
+fw_handle_message(Type, Info) ->
+    allow | deny
+when
+    Type :: 'cast' | 'call' | 'message' |'system',
+    Info :: {From, term()} | term(),
+    From :: {pid(), reference()}.
+
+-optional_callbacks([]).
+
+%% -------------------------------------------------------------------------------------------------
 %% API:
 
 -spec
