@@ -1,5 +1,8 @@
 -module(my_sup).
 
+-behavior(supervisor).
+-behavior(gen_fw).
+
 %% API
 -export([start_link/1, start_link/0]).
 
